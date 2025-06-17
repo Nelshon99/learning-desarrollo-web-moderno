@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+
+form{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #c5c5c5d5;
+    padding: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.form_item_content{
+    display: block;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+}
+
+button{
+    background-color: #1860e7d5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all;
+}
+button:hover{
+    background-color: #0c2e6d ;
+}
