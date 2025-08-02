@@ -1,0 +1,32 @@
+{
+  "name": "lugares_sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:dist/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.89.2"
+  },
+  "eslintConfig": {
+  "env": {
+    "node": true,
+    "es2021": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": ["error", "always"],
+    "quotes": ["error", "double"]
+  }
+  }
+
+  
+}
