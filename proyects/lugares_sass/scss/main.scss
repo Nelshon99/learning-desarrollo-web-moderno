@@ -1,5 +1,210 @@
-$test-color : red;
+@use "config" as *;
+@use "utilities";
 
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Titillium Web', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+
+}
+
+ a{
+    text-decoration: none;
+    color: $dark-color;
+ }
+
+ ul{
+    list-style: none;
+ }
+ h2,h3,h4{
+    text-transform: uppercase;
+ }
+
+ img{
+    width: 100%;
+ }
+
+ //Logo
+
+ #logo{
+    width: 60px;
+    height: 60px;
+ }
+
+ //Navegacion principal
+ #main-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    ul{
+        display: flex;
+    }
+    li{
+        padding: 1rem 1.5rem;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+
+        &:hover{
+            border-color: $medium-color;
+        }
+        &.current{
+            border-color: $main-color;
+        }
+    }
+ }
+
+ //Header
+
+ #header{
+    //header-home
+    &-home{
+        background: $backg-image no-repeat center right/cover;
+        height: 100vh;
+        color: #fff;
+        //header-content
+        .header-content{
+            text-align: center;
+            padding: 15%;
+
+            h1{
+                font-size: 4rem;
+                line-height: 1.2;
+            }
+
+        }
+    }
+ }
+
+//Estilos secciones inicio
+
+#home{
+    //Seccion A
+    &-a{
+        .specials{
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+    }
+    //Seccion B
+    &-b{
+        .stats{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            li{
+                line-height: 2;
+
+                &.stats-tittle{
+                    font-size: 1.5rem;
+                }
+                &.stats-number{
+                    font-size: 2rem;
+                    font-weight: bold;
+
+                }
+            }
+
+            div{
+                padding: 3rem 0;
+                
+                &:nth-child(odd){
+                    background: $light-color;
+                }
+                &:nth-child(even){
+                    background: $medium-color;
+                }
+            }
+        }
+    }
+    &-c{
+    .process{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1.5rem;
+        text-align: center;
+        
+        &-icon{
+            border-radius: 50%;
+            background: $dark-color;
+            color: set-text-color($dark-color);
+            padding-top: 1.2rem;
+            width: 90px;
+            height: 90px;
+            line-height: 40px;
+            text-align: center;
+            position: relative;
+            transition: all 1s;
+            &:hover{
+                background: $main-color;
+                width: 105px;
+                height: 105px;
+                // padding-top: 1.5rem;
+                line-height: 60px;
+                .process-step{
+                    background-color: $dark-color;
+                    color: set-text-color($dark-color);
+                }
+            }
+        }
+        &-step {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(10%, 0%);
+            font-size: 14px;
+            background: $main-color;
+            color: set-text-color($main-color);
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 1s ease;
+            box-shadow: 0 0 0 2px white; // opcional: borde blanco para separar del fondo
+  }
+    }
+}
+}
+
+// Footer
+.main-footer{
+    background: $dark-color;
+    color: #fff;
+    height: 5rem;
+
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+        align-items: center;
+        .social .fab{
+            margin-right: 1rem;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            line-height: 20px;
+            text-align: center;
+            padding: 0.1rem;
+
+            &:hover{
+                background: $main-color;
+            }
+        }
+    }
 }
