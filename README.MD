@@ -1,7 +1,11 @@
 #Aprendiendo desarrollo web moderno.
+
 ##Curso de render2web
+
 Source: https://www.udemy.com/share/10arqk3@o2J_wYqK97h9IR5c2sGfNW91x5P37f-G95oWx-UlKE1N70HwcxVZM_4D6LJLVkRNNw==/
+
 clases: 280
+
 Vídeo: 54,5 horas en total
 
 Domina el Desarrollo Web Moderno con el Curso Más Completo en Español: Aprende desde Cero con Proyectos Reales y Herramientas Actualizadas
