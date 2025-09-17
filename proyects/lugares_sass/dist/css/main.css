@@ -144,6 +144,9 @@ img {
   border-color: #ffbc00;
 }
 
+#header {
+  /*Header Inner*/
+}
 #header-home {
   background: url(/img/principal.jpg) no-repeat center right/cover;
   height: 100vh;
@@ -156,6 +159,11 @@ img {
 #header-home .header-content h1 {
   font-size: 4rem;
   line-height: 1.2;
+}
+#header-inner {
+  background: url(/img/principal.jpg) no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: solid 3px #ffbc00;
 }
 
 #home-a .specials {
@@ -231,6 +239,37 @@ img {
   justify-content: center;
   transition: all 1s ease;
   box-shadow: 0 0 0 2px white;
+}
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+#about-a .bio-image {
+  grid-area: bioimage;
+}
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid #ffbc00;
+  padding: 0.8rem;
+}
+#about-a .bio h4 {
+  font-size: 2rem;
+}
+#about-a .bio p {
+  width: 100%;
+  font-size: 1.3rem;
+}
+#about-a .award-1 {
+  grid-area: aw1;
+}
+#about-a .award-2 {
+  grid-area: aw2;
+}
+#about-a .award-3 {
+  grid-area: aw3;
 }
 
 .main-footer {
