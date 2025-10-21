@@ -9,7 +9,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50.5%;
   scroll-behavior: smooth;
 }
 
@@ -268,4 +268,392 @@ html {
 
 /* End Section-1 */
 
-/* beging Section-2 */
+/* beging Section-2 VIDEO */
+
+.section-2 {
+  width: 100%;
+  height: 100dvh;
+  background-color: #222020;
+  display: flex;
+  align-items: center;
+  padding: 0 10rem;
+  position: relative;
+}
+.section-heading {
+  font-size: 10rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #ddd;
+  margin-right: 2rem;
+}
+
+.section-heading-line {
+  width: 15rem;
+  height: 0.2rem;
+  background-color: #ddd;
+}
+
+.video-wrapper {
+  width: 70rem;
+  height: 35rem;
+  position: absolute;
+  top: 15rem;
+  right: 10rem;
+  box-shadow: 3rem 3rem 6rem rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.controls {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(calc(100% - 0.4rem));
+  transition: transform 0.4s;
+}
+.video-wrapper:hover .controls {
+  transform: translateY(0);
+}
+.video-bar-wrapper {
+  width: 100%;
+  height: 0.7rem;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.video-bar {
+  height: 100%;
+  width: 0;
+  background-color: #d30819;
+  transition: width 0.2s linear;
+}
+.buttons {
+  padding: 0.5rem 0.1rem 0.1rem 0.1rem;
+}
+
+.buttons i {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  color: white;
+}
+.buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.section-2-paragraph {
+  width: 70rem;
+  position: absolute;
+  font-size: 1.5rem;
+  bottom: 14rem;
+  right: 10rem;
+  line-height: 1.5rem;
+  color: #ddd;
+  border-top: 0.3rem double #aaa;
+  border-bottom: 0.3rem double #aaa;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7);
+}
+
+.fa-quote-left {
+  align-self: flex-start;
+  font-size: 3rem;
+  color: #ddd;
+}
+
+.fa-quote-right {
+  align-self: flex-end;
+  font-size: 3rem;
+  color: #ddd;
+}
+/* End Section-2 */
+
+/* Section 3 */
+.section-3 {
+  width: 100%;
+  height: 100dvh;
+  background-color: #03070e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5rem;
+  /* overflow: hidden; */
+}
+.price-card-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem;
+}
+
+.price-card {
+  width: 28rem;
+  height: 45rem;
+  background-color: #181b1d;
+  border-radius: 1rem;
+  box-shadow: 2rem 2rem 6rem rgba(0, 0, 0, 0.7);
+}
+
+.price-card-front {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-card-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.price-card-price {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 7rem;
+  color: white;
+  font-weight: 400;
+}
+
+.price-card-list li {
+  margin-bottom: 0.5rem;
+}
+.price-card-list i {
+  font-size: 1.8rem;
+  width: 3rem;
+}
+.price-card-list span {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.price-card-btn {
+  width: 15rem;
+  height: 5rem;
+  margin-bottom: 3rem;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  text-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+}
+/* Efecto de brillo chido */
+.price-card-btn::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #fff, transparent);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transform: skewX(-30deg);
+  transition: left 0.5s;
+}
+
+.price-card-btn:hover:before {
+  left: 100%;
+}
+
+.heading-free {
+  background: linear-gradient(to right, #087285, #0da5d3);
+}
+
+.list-free {
+  color: #0da5d3;
+}
+
+.btn-free {
+  background-color: #0da5d3;
+}
+
+.heading-basic {
+  background: linear-gradient(to right, #946809, #bdba0e);
+}
+.list-basic {
+  color: #bdba0e;
+}
+
+.btn-basic {
+  background-color: #bdba0e;
+}
+
+.heading-pro {
+  background: linear-gradient(to right, #a10c14, #e23b3b);
+}
+.list-pro {
+  color: #e23b3b;
+}
+
+.btn-pro {
+  background-color: #e23b3b;
+}
+
+.heading-plus {
+  background: linear-gradient(to right, #0e7e48, #3be286);
+}
+.list-plus {
+  color: #3be286;
+}
+
+.btn-plus {
+  background-color: #3be286;
+}
+
+/* End section 3 */
+
+/* Section 4 Contacto */
+
+.section-4 {
+  width: 100%;
+  height: 100dvh;
+  background-color: #171718;
+  display: flex;
+  align-items: center;
+  padding: 0 10rem;
+}
+
+.contact-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-details {
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-details div {
+  width: 25rem;
+  text-align: center;
+  margin: 4rem;
+}
+
+.contact-details i {
+  font-size: 5rem;
+  color: #7a1010;
+}
+
+.contact-details h3 {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  color: #ccc;
+}
+
+.contact-details p {
+  font-size: 1.6rem;
+  color: #ccc;
+}
+
+.contact-wrapper h1 {
+  font-size: 4rem;
+  color: #ccc;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.contact-form {
+  width: 70rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1.5rem;
+  background-color: #444;
+  color: #eee;
+  border: none;
+  margin-bottom: 2rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.contact-form textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 15rem;
+  min-height: 5rem;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #7a1010;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #5f0303;
+}
+
+/* End Section 4 */
+
+/* Footer */
+.footer {
+  background-color: #202122;
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+}
+
+.footer-nav a {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 2rem;
+  margin-right: 3rem;
+  color: #ccc;
+  letter-spacing: 0.1rem;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: #862323;
+}
+.curso {
+  display: flex;
+  flex-direction: column;
+}
+.copyright {
+  font-size: 3rem;
+  color: #ddd;
+}
+.estudiante {
+  font-size: 2.5rem;
+  color: #ddd;
+}
